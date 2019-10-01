@@ -134,4 +134,4 @@ class WMC_Widget extends WP_Widget {
 		return $instance;
 	}
 
-} // class Foo_Widget
+} // class WMC_Widget
