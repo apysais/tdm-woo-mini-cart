@@ -3,7 +3,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 /**
- * Adds Foo_Widget widget.
+ * Adds Sidebar.
  */
 class WMC_Sidebar {
 

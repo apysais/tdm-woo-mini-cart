@@ -3,7 +3,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 /**
- * Adds Foo_Widget widget.
+ * Adds WMC_Widget widget.
  */
 class WMC_Widget extends WP_Widget {
 
