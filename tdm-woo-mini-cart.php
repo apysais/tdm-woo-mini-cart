@@ -110,6 +110,7 @@ function run_tdm_woo_mini_cart() {
 	$plugin->run();
 
 	WMC_Widget::get_instance();
+	WMC_Sidebar::get_instance();
 
 }
 add_action('plugins_loaded', 'run_tdm_woo_mini_cart');

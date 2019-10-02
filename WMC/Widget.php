@@ -62,10 +62,10 @@ class WMC_Widget extends WP_Widget {
 			esc_html__( 'TDM WOO Mini Cart' ), // Name
 			array( 'description' => esc_html__( 'A WOO Mini Cart' ), ) // Args
 		);
-    add_action( 'widgets_init', [$this, 'register_foo_widget'] );
+    add_action( 'widgets_init', [$this, 'register_wmc_widget'] );
 	}
 
-  public function register_foo_widget() {
+  public function register_wmc_widget() {
     register_widget( 'WMC_Widget' );
   }
 
