@@ -4,7 +4,7 @@
   $cart_totals = $objCart->get_totals( );
   $cart_total_value = wc_price( $cart_totals['subtotal'] + $cart_totals['subtotal_tax'] );
 ?>
-
+<div id="tdm-wmc-dropdown-main-container">
 <?php echo $before_widget;?>
 <?php echo $before_title;?>
 <div class="tdm_wmc_before_container">
@@ -25,7 +25,7 @@
 
       <?php do_action( 'tdm_wmc_before_not_empty' ); ?>
 
-      <ul class="tdm-wmc tdm-wmc-list tdm-wmc-product_list_widget <?php echo esc_attr( $custom_main_class ); ?>">
+      <ul class="tdm-wmc tdm-wmc-list tdm-wmc-product_list_widget tdm-wmc-dropdown-container <?php echo esc_attr( $custom_main_class ); ?>">
 
         <?php
     		  do_action( 'tdm_wmc_before_contents' );
@@ -108,3 +108,5 @@
 <?php do_action( 'tdm_wmc_after' ); ?>
 
 <?php echo $after_widget;?>
+
+</div>

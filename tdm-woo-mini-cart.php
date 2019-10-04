@@ -58,7 +58,7 @@ function wmc_get_plugin_details(){
 	 require_once ABSPATH . 'wp-admin/includes/plugin.php';
  }
  $ret = get_plugins();
- return $ret['tdm-woo-mini-cart/-woo-mini-cart.php'];
+ return $ret['tdm-woo-mini-cart/tdm-woo-mini-cart.php'];
 }
 function wmc_get_text_domain(){
  $ret = wmc_get_plugin_details();

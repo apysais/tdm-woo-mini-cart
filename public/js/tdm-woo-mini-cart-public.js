@@ -29,4 +29,10 @@
 	 * practising this, we should strive to set a better example in our own work.
 	 */
 
+	 $( window ).load(function() {
+		 $('#tdm-wmc-dropdown-main-container').on('click', function(){
+			 $('.tdm-wmc-dropdown-container').toggle();
+		 });
+	 });
+
 })( jQuery );

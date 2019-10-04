@@ -4,7 +4,7 @@
   $cart_totals = $objCart->get_totals( );
   $cart_total_value = wc_price( $cart_totals['subtotal'] + $cart_totals['subtotal_tax'] );
 ?>
-
+<div id="tdm-wmc-off-canvas-left-main-container">
 <?php echo $before_widget;?>
 <?php echo $before_title;?>
 <div class="tdm_wmc_before_container">
@@ -25,8 +25,10 @@
 
       <?php do_action( 'tdm_wmc_before_not_empty' ); ?>
 
-      <ul class="tdm-wmc tdm-wmc-list tdm-wmc-product_list_widget <?php echo esc_attr( $custom_main_class ); ?>">
-
+      <ul id="tdm-wmc-offcanvas-left-cointainer" class="tdm-wmc tdm-wmc-list tdm-wmc-product_list_widget <?php echo esc_attr( $custom_main_class ); ?> off-canvas position-left is-closed" data-off-canvas data-transition="overlap">
+        <button class="close-button" aria-label="Close menu" type="button" data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
         <?php
     		  do_action( 'tdm_wmc_before_contents' );
         ?>
@@ -108,3 +110,4 @@
 <?php do_action( 'tdm_wmc_after' ); ?>
 
 <?php echo $after_widget;?>
+</div>
