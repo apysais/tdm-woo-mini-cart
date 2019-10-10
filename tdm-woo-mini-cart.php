@@ -12,7 +12,7 @@
  * @wordpress-plugin
  * Plugin Name:       TDM WOO Mini Cart
  * Plugin URI:        http://thedigitalmarketers.com.au/
- * Description:       This is a short description of what the plugin does. It's displayed in the WordPress admin area.
+ * Description:       Display Woocommerce mini cart in sidebars with widget support.
  * Version:           1.0.0
  * Author:            TDM
  * Author URI:        http://thedigitalmarketers.com.au/
