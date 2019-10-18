@@ -28,11 +28,13 @@
 	 * Although scripts in the WordPress core, Plugins and Themes may be
 	 * practising this, we should strive to set a better example in our own work.
 	 */
-
+	 //jQuery( document ).foundation();
 	 $( window ).load(function() {
+
 		 $('#tdm-wmc-dropdown-main-container').on('click', function(){
 			 $('.tdm-wmc-dropdown-container').toggle();
 		 });
+		 //$('.tdm-wmc-off-canvass-overlay').foundation('open', event, '.off-canvas-right');
 	 });
 
 })( jQuery );

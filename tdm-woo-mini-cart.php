@@ -94,6 +94,7 @@ register_deactivation_hook( __FILE__, 'deactivate_tdm_woo_mini_cart' );
  * admin-specific hooks, and public-facing site hooks.
  */
 require plugin_dir_path( __FILE__ ) . 'includes/class-tdm-woo-mini-cart.php';
+require plugin_dir_path( __FILE__ ) . 'functions/nav-menu.php';
 
 /**
  * Begins execution of the plugin.
@@ -110,7 +111,7 @@ function run_tdm_woo_mini_cart() {
 	$plugin->run();
 
 	WMC_Widget::get_instance();
-	WMC_Sidebar::get_instance();
+	//WMC_Sidebar::get_instance();
 
 }
 add_action('plugins_loaded', 'run_tdm_woo_mini_cart');
